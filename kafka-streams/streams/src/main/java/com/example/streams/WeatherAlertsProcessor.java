@@ -16,6 +16,7 @@ public class WeatherAlertsProcessor {
     public static final double HUMIDITY_ALARM_THRESHOLD_PERCENTS = 50.0;
 
 
+    //TODO: HERE
     @Bean
     public Function<KStream<Long, WeatherDataAggregation>, KStream<Long, WeatherDataAggregation>> alarmProcessor() {
         return input -> input.filter(this::thresholdReached);

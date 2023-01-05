@@ -15,6 +15,4 @@ public class WeatherDataAggregation {
     private Instant endTime;
     private double avgTempCelsius;
     private double avgHumidity;
-
-
 }
